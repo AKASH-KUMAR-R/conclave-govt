@@ -20,7 +20,7 @@ export const Profile = () => {
                             </div>
                             <button
                                 type='button'
-                                className=' px-2 w-40 h-12 flex justify-center items-center bg-[#F0EFFA] text-lg font-bold rounded-full'
+                                className=' px-2 w-40 h-12 flex justify-center items-center border-2 border-black border-opacity-20 bg-[#F0EFFA] text-lg font-bold rounded-full'
                             >
                                 Update Photo
                             </button>
