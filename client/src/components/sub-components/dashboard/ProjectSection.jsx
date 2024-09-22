@@ -1,5 +1,5 @@
 import { IoArrowBackCircleOutline, IoFilter } from "react-icons/io5";
-import { IconButton } from "../../../common/components/IconButton";
+import { IconButton } from "../../../common/components/buttons/IconButton";
 import { PiPlus } from "react-icons/pi";
 import { ProjectCard } from "../../../common/components/project-section/ProjectCard";
 

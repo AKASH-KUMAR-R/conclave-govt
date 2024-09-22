@@ -5,7 +5,7 @@ import { LuUser2 } from "react-icons/lu";
 import { PiGearFine } from "react-icons/pi";
 import { TbLogout } from "react-icons/tb";
 import { Link, useLocation } from "react-router-dom";
-import { IconButton } from "../common/components/IconButton";
+import { IconButton } from "../common/components/buttons/IconButton";
 import { CgClose } from "react-icons/cg";
 
 
