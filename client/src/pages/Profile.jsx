@@ -1,17 +1,18 @@
 import { CircularProgressBar } from '../common/components/CircularProgressBar';
 import { Input } from '../common/components/input/Input';
-import ProfileImage from '/profile-image.jpg';
+import { HeadSection } from '../components/sub-components/dashboard/HeroSection';
+import ProfileImage from '/user1-image.jpeg';
 
 export const Profile = () => {
 
     return (
         <section className=" px-2 sm:px-6 py-4 bg-primary h-[calc(100vh-74px)] overflow-y-auto">
-
-            <form className=' w-full  flex flex-col xl:flex-row gap-4'>
+            <HeadSection />
+            <form className=' pt-8 w-full  flex flex-col xl:flex-row gap-4'>
                 <div className=" flex-grow left space-y-10">
                     <div className=" max-w-xl top flex flex-col sm:flex-row gap-4 items-center">
                         <div className=" flex flex-col items-center gap-4">
-                            <div>
+                            <div className=' max-w-28'>
                                 <img
                                     src={ProfileImage}
                                     className=" object-cover rounded-full"
@@ -31,40 +32,48 @@ export const Profile = () => {
                                 type='text'
                                 placeholder='Name'
                             />
-                            <Input
-                                type='text'
-                                placeholder='Education Status'
-                            />
+                            <div>
+                            <select
+                                className=' w-full max-w-xl px-3 h-12 focus:outline-none bg-white rounded'
+                            >
+                                <option>Educational Status</option>
+                                <option>Undergraduated</option>
+                                <option>Postgraduated</option>
+                            </select>
+                            </div>
+                            
                         </div>
                     </div>
 
                     <div className=' w-full flex flex-col gap-6'>
 
-                        <Input
-                            type='text'
-                            placeholder='College name'
-                            value="Government Engineering College Thrissur"
-                            disable
-                        />
+                        <select
+                            className=' w-full max-w-xl px-3 h-12 focus:outline-none bg-white rounded'
+                        >
+                            <option>College Name</option>
+                            <option>Government Engineering College Thrissur</option>
+                            <option>Government Engineering College Trivandum</option>
+                            <option>NSS College Of Engineering Palakkad</option>
+                        </select>
                         <div className=' flex flex-col gap-4'>
                             <span className=' text-lg font-semibold  '>Links</span>
                             <Input
                                 type='text'
                                 placeholder='Email'
-                                value='student121314@gmail.com' 
+                                value='student121314@gmail.com'
                                 disable
                             />
                             <Input
                                 type='text'
                                 placeholder='Github'
                                 value='https://www.github.com'
-                                disable 
+                                disable
                             />
                             <Input
                                 type='text'
                                 placeholder='Linkedin'
                                 value="https://www.linkedin.com"
-                                disable 
+                                disable
                             />
                         </div>
 

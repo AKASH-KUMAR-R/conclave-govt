@@ -32,7 +32,7 @@ export const Dashboard = () => {
 
     return (
         <main className=" w-full bg-primary h-[calc(100vh-78px)] overflow-y-auto">
-            <section className=" px-2 py-4 ">
+            <section className=" px-2  sm:px-6 py-4 ">
                 {sectionName === 'dashboard' && <HeadSection />
 }
                 {sectionName === 'dashboard' && <section className=" mt-16 py-4 flex flex-wrap justify-center items-center gap-6">

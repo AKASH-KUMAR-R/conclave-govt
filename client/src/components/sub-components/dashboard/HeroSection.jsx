@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { StatisticsBox } from "./StatisticsBox";
 import { TbBell } from "react-icons/tb";
 
 
 export const HeadSection = () => {
+    
+    const navigate = useNavigate();
+
+    const navigateToNotifig = () => {
+        navigate('/notifications');
+    }
 
     return (
         <section className=" w-full flex flex-col md:flex-row gap-4 justify-between">
@@ -20,7 +27,7 @@ export const HeadSection = () => {
                 <StatisticsBox />
                 <div className=" flex-grow p-4 hidden md:flex justify-between items-center bg-white shadow-sm rounded-md">
                     <span className=" font-semibold">Notifications</span>
-                    <TbBell size={28} />
+                    <i className=" cursor-pointer" onClick={navigateToNotifig}> <TbBell size={28} /></i>
                 </div>
             </div>
         </section>

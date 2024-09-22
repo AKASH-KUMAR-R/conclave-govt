@@ -18,7 +18,7 @@ export const ProjectCard = ({ headLine, subHead, description, tags, id }) => {
                     <FaGithub size={28} className=" opacity-60 hover:opacity-100 duration-300" />
                 </div>
                 <div className=" pb-4 border-b border-black">
-                    {<p className=" line-clamp-2">
+                    {<p className=" line-clamp-3">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam laudantium tempore magnam corrupti, delectus quibusdam
                     </p>}
                 </div>

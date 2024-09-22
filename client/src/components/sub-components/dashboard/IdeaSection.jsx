@@ -20,7 +20,7 @@ export const IdeaSection = ({changeSection}) => {
                     <span className=" text-2xl sm:text-3xl font-semibold">Ideas</span>
                 </div>
                 <IconButton
-                    className=' rounded-full bg-purple-400 bg-secondary-shade '
+                    className=' rounded-full bg-purple-400  '
                 >
                     <PiPlus size={28} strokeWidth={2} />
                     <span className=" mb-0.5  font-semibold hidden sm:block">Add New</span>
@@ -29,7 +29,7 @@ export const IdeaSection = ({changeSection}) => {
             <section className=" w-full">
 
                 <div className=" pt-4 flex flex-col-reverse md:flex-row  justify-between items-center gap-4">
-                    <div className=" w-full max-w-sm bg-gradient-to-r from-[#8E93FF] to-[#6967FF] flex rounded-md overflow-hidden">
+                    <div className=" max-w-sm bg-gradient-to-r from-[#8E93FF] to-[#6967FF] flex rounded-md overflow-hidden">
                         <input
                             placeholder="Search..."
                             className=" px-2 py-3 w-full min-w-64 bg-white flex rounded-r-lg shadow-sm focus:outline-none"
