@@ -38,11 +38,11 @@ export const ProjectSection = ({ changeSection}) => {
                 </div>
 
                 <div className=" w-full py-6 flex flex-wrap justify-around gap-6">
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
+                    <ProjectCard id='1'/>
+                    <ProjectCard id='2'/>
+                    <ProjectCard id='3'/>
+                    <ProjectCard id='4'/>
+                    <ProjectCard id='5'/>
                 </div>
             </section>
         </>

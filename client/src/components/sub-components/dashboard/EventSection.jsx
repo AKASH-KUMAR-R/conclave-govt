@@ -13,7 +13,7 @@ export const EventSection = () => {
             <div className="  sm:px-8 mt-10 flex flex-col gap-4">
                 <EventCard />
                 <EventCard isReverse />
-                <EventCard />
+                <EventCard  />
             </div>
         </section>
     );

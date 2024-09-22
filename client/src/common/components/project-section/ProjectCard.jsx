@@ -1,17 +1,22 @@
+import { FaGithub } from "react-icons/fa6";
 
 
-export const ProjectCard = ({ headLine, subHead, description, tags }) => {
+export const ProjectCard = ({ headLine, subHead, description, tags, id }) => {
 
     return (
-        <div className="  pb-6 w-full max-w-72 custom-shadow rounded-md overflow-hidden">
-            <div className=" w-full bg-[#D9D9D9] min-h-1 h-40">
-
+        <div className=" px-3  pb-6 w-full max-w-72 custom-shadow rounded-md overflow-hidden">
+            <div className=" text-lg opacity-60">
+                <span>#{id}</span>
             </div>
-            <div className=" px-3 flex flex-col ">
-                {<div className=" py-4 font-semibold">
+            <div className="  flex flex-col ">
+                <div className=" py-4 flex justify-between items-center font-semibold">
+                    <div>
                     <h2 className=" text-xl">Headline</h2>
                     <h3 className=" text-sm opacity-60">SubHead</h3>
-                </div>}
+                    </div>
+                    
+                    <FaGithub size={28} className=" opacity-60 hover:opacity-100 duration-300" />
+                </div>
                 <div className=" pb-4 border-b border-black">
                     {<p className=" line-clamp-2">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam laudantium tempore magnam corrupti, delectus quibusdam
