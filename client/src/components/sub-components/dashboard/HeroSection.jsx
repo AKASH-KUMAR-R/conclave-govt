@@ -11,8 +11,8 @@ export const HeadSection = () => {
     }
 
     return (
-        <section className=" w-11/12 flex flex-col md:flex-row gap-4 justify-between">
-            <div className=" min-h-60 relative px-6 py-4 w-full flex flex-col-reverse md:flex-row justify-between items-center gap-4 text-white bg-gradient-to-b from-[#8e9eff] to-[#0041e8] rounded">
+        <section className=" w-full flex flex-col md:flex-row gap-4 justify-between">
+            <div className=" min-h-40 relative px-6 py-4 w-full flex flex-col-reverse md:flex-row justify-between items-center gap-4 text-white bg-gradient-to-b from-[#8e9eff] to-[#0041e8] rounded">
                 <div className=" flex flex-col justify-center gap-4">
                     <h2 className=" text-xl font-bold">WELCOME BACK!</h2>
                     <p className=" line-clamp-3">

@@ -60,7 +60,7 @@ export const Dashboard = () => {
     // }, []);
 
     return (
-        <main className=" w-full px-16 bg-primary h-[calc(100vh-78px)] overflow-y-auto">
+        <main className=" w-full px-2 sm:px-16 bg-primary h-[calc(100vh-78px)] overflow-y-auto">
             <section className=" px-2   sm:px-6 py-6 ">
                 {sectionName === 'dashboard' && <HeadSection />
                 }

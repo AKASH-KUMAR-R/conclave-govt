@@ -16,7 +16,7 @@ export const IdeaSection = ({ changeSection }) => {
 
     return (
         <>
-            <section className=" flex">
+            <section className=" flex justify-between">
                 <IconButton
                     className=' rounded-full'
                     onClick={() => changeSection('dashboard')}
