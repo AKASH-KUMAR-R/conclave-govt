@@ -2,8 +2,17 @@ import { IoArrowBackCircleOutline, IoFilter } from "react-icons/io5";
 import { IconButton } from "../../../common/components/buttons/IconButton";
 import { PiPlus } from "react-icons/pi";
 import { ProjectCard } from "../../../common/components/project-section/ProjectCard";
+import { ProductCreateForm } from "../../../common/components/project-section/ProductCreateForm";
+import { useState } from "react";
 
-export const ProjectSection = ({ changeSection}) => {
+export const ProjectSection = ({ changeSection }) => {
+
+    const [showForm, setShowForm] = useState(false);
+
+
+    const triggerForm = () => {
+        setShowForm(prev => !prev);
+    }
 
     return (
         <>
@@ -16,10 +25,11 @@ export const ProjectSection = ({ changeSection}) => {
                         <IoArrowBackCircleOutline size={28} />
                         <span className=" mb-0.5 font-semibold hidden sm:block">Go Back</span>
                     </IconButton>
-                    <span className=" text-2xl sm:text-3xl font-semibold">Project Showcase</span>
+                    <span className=" text-2xl sm:text-3xl font-semibold">Product Showcase</span>
                 </div>
                 <IconButton
                     className=' rounded-full bg-purple-400'
+                    onClick={triggerForm}
                 >
                     <PiPlus size={28} strokeWidth={2} />
                     <span className=" mb-0.5  font-semibold hidden sm:block">Add New</span>
@@ -37,12 +47,17 @@ export const ProjectSection = ({ changeSection}) => {
                     </div>
                 </div>
 
+                {showForm && <section>
+                    <h1 className=" text-xl font-semibold">Product Registration Form</h1>
+                    <ProductCreateForm closeHandler={triggerForm} />
+                </section>}
+
                 <div className=" w-full py-6 flex flex-wrap justify-around gap-6">
-                    <ProjectCard id='1'/>
-                    <ProjectCard id='2'/>
-                    <ProjectCard id='3'/>
-                    <ProjectCard id='4'/>
-                    <ProjectCard id='5'/>
+                    <ProjectCard id='1' />
+                    <ProjectCard id='2' />
+                    <ProjectCard id='3' />
+                    <ProjectCard id='4' />
+                    <ProjectCard id='5' />
                 </div>
             </section>
         </>

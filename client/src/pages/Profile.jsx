@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { CircularProgressBar } from '../common/components/CircularProgressBar';
 import { Input } from '../common/components/input/Input';
 import { HeadSection } from '../components/sub-components/dashboard/HeroSection';
@@ -5,12 +6,18 @@ import ProfileImage from '/user1-image.jpeg';
 
 export const Profile = () => {
 
+    const [formData, setFormData] = useState({
+        name: '',
+        image: ''
+    });
+
+
     return (
         <section className=" px-2 sm:px-6 py-4 bg-primary h-[calc(100vh-74px)] overflow-y-auto">
             <HeadSection />
             <form className=' pt-8 w-full  flex flex-col xl:flex-row gap-4'>
-                <div className=" flex-grow left space-y-10">
-                    <div className=" max-w-xl top flex flex-col sm:flex-row gap-4 items-center">
+                <div className=" flex-grow left space-y-10 place-self-center min-w-96">
+                    <div className=" max-w-xl top flex flex-col  gap-4 items-center">
                         <div className=" flex flex-col items-center gap-4">
                             <div className=' max-w-28'>
                                 <img
@@ -31,21 +38,23 @@ export const Profile = () => {
                             <Input
                                 type='text'
                                 placeholder='Name'
+                                value={formData.name}
+                                onChange={ (event) => setFormData(prev => ({...prev, name: event.target.value}))}
                             />
                             <div>
-                            <select
+                            {/* <select
                                 className=' w-full max-w-xl px-3 h-12 focus:outline-none bg-white rounded'
                             >
                                 <option>Educational Status</option>
                                 <option>Undergraduated</option>
                                 <option>Postgraduated</option>
-                            </select>
+                            </select> */}
                             </div>
                             
                         </div>
                     </div>
 
-                    <div className=' w-full flex flex-col gap-6'>
+                    {/* <div className=' w-full flex flex-col gap-6'>
 
                         <select
                             className=' w-full max-w-xl px-3 h-12 focus:outline-none bg-white rounded'
@@ -77,12 +86,12 @@ export const Profile = () => {
                             />
                         </div>
 
-                    </div>
+                    </div> */}
                 </div>
-                <div className=" flex-grow right">
+                {/* <div className=" flex-grow right">
                     <div className=' flex items-center gap-4'>
                         <div className=' profile-progress'>
-                            <CircularProgressBar progressValue={78} />
+                            <CircularProgressBar progressValue={20} />
                         </div>
                         <div className=' space-y-2 font-medium'>
                             <h2>Profile completion status</h2>
@@ -97,7 +106,7 @@ export const Profile = () => {
 
                     </textarea>
 
-                </div>
+                </div> */}
             </form>
 
         </section>

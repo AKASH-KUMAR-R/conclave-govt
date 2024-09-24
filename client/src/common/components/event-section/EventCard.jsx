@@ -1,6 +1,6 @@
 // import Image from '/image.jpg';
 
-export const EventCard = ({isReverse = false}) => {
+export const EventCard = ({ name, date, description}) => {
 
     return (
         <div className=" w-full max-w-3xl flex gap-4 custom-shadow rounded-xl overflow-hidden">

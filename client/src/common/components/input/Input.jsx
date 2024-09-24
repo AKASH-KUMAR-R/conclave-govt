@@ -1,6 +1,6 @@
 
 
-export const Input = ({ type, className, placeholder, disable = false, value, required = false, ...props }) => {
+export const Input = ({ type, className, placeholder, onChange, disable = false, value, required = false, ...props }) => {
 
     return (
         <>
@@ -10,6 +10,7 @@ export const Input = ({ type, className, placeholder, disable = false, value, re
                 className={` w-full px-3 h-12 max-w-xl bg-white focus:outline-none rounded ${className} `}
                 value={value}
                 required={required}
+                onChange={onChange}
                 {...props}
             />
                 :

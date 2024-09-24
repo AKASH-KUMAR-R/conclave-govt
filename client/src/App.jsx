@@ -16,6 +16,7 @@ function App () {
             <Route path="/dashboard" element={<Dashboard />}/>
             <Route path="/notifications" element={<NotificationPage  />}/>
             <Route path="/profile" element={<Profile />} />
+            {/* <Route  path="industry/dashboard" element={<IndustryDashboard />}/> */}
           </Routes>
           </CommonLayout>
         </Router>
