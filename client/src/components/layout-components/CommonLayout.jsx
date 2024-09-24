@@ -17,8 +17,9 @@ export const CommonLayout = ({ children }) => {
             <SideNavBar
                 show={showNavBar}
                 toggleFunction={toggleFunction} 
+                className
             />
-            <section className=" w-full">
+            <section className=" w-full ">
                 <Header
                     toggleFunction={toggleFunction} 
                 />

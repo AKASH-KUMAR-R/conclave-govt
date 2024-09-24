@@ -4,7 +4,7 @@ import { statusColor } from "../../constants/statusColor";
 export const IdeaBox = ({ tagNumber, title, description, status}) => {
 
     return (
-        <div className=" relative pt-2 pb-10 px-3 w-full max-w-60 custom-shadow rounded-md" >
+        <div className="sm:min-w-72 relative pt-4 pb-10 px-3 w-full max-w-60 custom-shadow rounded-md" >
             <div className=" flex justify-between">
                 {tagNumber && <span className=" text-xl opacity-60">#1</span>}
                 <div className={` px-4 py-1 text-xs font-medium flex justify-center items-center rounded-full bg-opacity-20 ${statusColor[status].color}`}>

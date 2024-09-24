@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 export const ProjectCard = ({ headLine, subHead, description, tags, id }) => {
 
     return (
-        <div className=" px-3  pb-6 w-full max-w-72 custom-shadow rounded-md overflow-hidden">
+        <div className=" px-4 py-6 w-full max-w-72 custom-shadow scale-100 hover:scale-105 transition-all rounded-md overflow-hidden">
             <div className=" text-lg opacity-60">
                 <span>#{id}</span>
             </div>

@@ -16,23 +16,29 @@ export const IdeaSection = ({ changeSection }) => {
 
     return (
         <>
+            <section className=" flex">
+                <IconButton
+                    className=' rounded-full'
+                    onClick={() => changeSection('dashboard')}
+                >
+                    <IoArrowBackCircleOutline size={28} />
+                    <span className=" mb-0.5 font-semibold hidden sm:block">Go Back</span>
+                </IconButton>
+
+                <StatisticsBox className=' bg-primary max-w-sm' />
+
+            </section>
             <section className=" sticky py-4 w-full flex justify-between border-b border-black border-opacity-20">
                 <div className=" w-full flex items-center gap-4">
-                    <IconButton
-                        className=' rounded-full'
-                        onClick={() => changeSection('dashboard')}
-                    >
-                        <IoArrowBackCircleOutline size={28} />
-                        <span className=" mb-0.5 font-semibold hidden sm:block">Go Back</span>
-                    </IconButton>
+
                     <span className=" text-2xl sm:text-3xl font-semibold">Ideas</span>
                 </div>
                 <IconButton
-                    className=' rounded-full bg-purple-400  '
+                    className=' rounded-xl border border-black hover:bg-secondary hover:text-white duration-300  '
                     onClick={triggerForm}
                 >
-                    <PiPlus size={28} strokeWidth={2} />
-                    <span className=" mb-0.5  font-semibold hidden sm:block">Add New</span>
+                    <PiPlus size={26} strokeWidth={2} />
+                    <span className=" mb-0.5  font-semibold hidden sm:block ">Add New</span>
                 </IconButton>
             </section>
             <section className=" w-full">
@@ -54,7 +60,7 @@ export const IdeaSection = ({ changeSection }) => {
                 </div>
 
                 {showForm && <section className=" pt-6">
-                    <h1 className=" text-xl font-semibold">Idea Submission Form</h1>
+                    <h1 className=" ml-2 text-xl font-semibold">Idea Submission Form</h1>
                     <IdeaCreateForm closehandler={triggerForm} />
                 </section>}
 

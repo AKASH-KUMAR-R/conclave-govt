@@ -25,26 +25,26 @@ const ITEMS = [
         link: '/notifications',
         icon: <PiGearFine size={24}/>
     },
-    {
-        name: 'Lorem',
-        link: '/lorem',
-        icon: <PiGearFine size={24}/>
-    },
-    {
-        name: 'Lorem',
-        link: '/lorem',
-        icon: <PiGearFine size={24}/>
-    },
-    {
-        name: 'Lorem',
-        link: '/lorem',
-        icon: <PiGearFine size={24}/>
-    },
-    {
-        name: 'Lorem',
-        link: '/lorem',
-        icon: <PiGearFine size={24}/>
-    }
+    // {
+    //     name: 'Lorem',
+    //     link: '/lorem',
+    //     icon: <PiGearFine size={24}/>
+    // },
+    // {
+    //     name: 'Lorem',
+    //     link: '/lorem',
+    //     icon: <PiGearFine size={24}/>
+    // },
+    // {
+    //     name: 'Lorem',
+    //     link: '/lorem',
+    //     icon: <PiGearFine size={24}/>
+    // },
+    // {
+    //     name: 'Lorem',
+    //     link: '/lorem',
+    //     icon: <PiGearFine size={24}/>
+    // }
 ]
 
 export const SideNavBar = ({ show, toggleFunction}) => {
@@ -52,10 +52,10 @@ export const SideNavBar = ({ show, toggleFunction}) => {
     const location = useLocation();
 
     return (
-        <section className={` fixed lg:static z-50 w-full h-screen max-w-xs bg-white -translate-x-full lg:-translate-x-0 transition-transform duration-300 ${show ? 'translate-x-0' : ''}`}>
+        <section className={` fixed lg:static z-50 w-full h-screen max-w-[260px] bg-white -translate-x-full block sm:hidden lg:-translate-x-0 transition-transform duration-300 ${show ? 'translate-x-0' : ''}`}>
 
             <div className=" w-full h-[calc(100%-58px)] flex flex-col gap-6">
-                <div className=" py-4 flex justify-around items-center bg-primary">
+                <div className=" py-4 flex justify-around items-center bg-[#F1F3F7]">
                     <span className=" text-3xl font-bold text-secondary">CONCLAVE</span>
                     <IconButton
                         onClick={toggleFunction}
