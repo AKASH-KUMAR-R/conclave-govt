@@ -19,7 +19,7 @@ export const CommonLayout = ({ children }) => {
                 toggleFunction={toggleFunction} 
                 className
             />
-            <section className=" w-full ">
+            <section >
                 <Header
                     toggleFunction={toggleFunction} 
                 />

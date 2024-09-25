@@ -3,6 +3,8 @@ import { Dashboard } from "./pages/Dashboard";
 import { CommonLayout } from "./components/layout-components/CommonLayout";
 import { NotificationPage } from "./components/NotificationPage";
 import { Profile } from "./pages/Profile";
+import { IdeaSection } from "./components/sub-components/dashboard/IdeaSection";
+import { ProjectSection } from "./components/sub-components/dashboard/ProjectSection";
 
 
 function App () {
@@ -14,6 +16,8 @@ function App () {
         <CommonLayout>
           <Routes>
             <Route path="/dashboard" element={<Dashboard />}/>
+            <Route path="/ideas" element={<IdeaSection />} />
+            <Route path="/product" element={<ProjectSection  />} />
             <Route path="/notifications" element={<NotificationPage  />}/>
             <Route path="/profile" element={<Profile />} />
             {/* <Route  path="industry/dashboard" element={<IndustryDashboard />}/> */}

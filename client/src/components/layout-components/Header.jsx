@@ -47,7 +47,7 @@ export const Header = ({toggleFunction}) => {
             
             <div className=" w-1/2  items-center justify-around text-lg opacity-80 hidden sm:flex gap-4">
 
-                <div className=" hidden lg:flex items-center gap-4">
+                <div className=" hidden lg:flex items-center justify-around w-6/12  gap-4">
                 {ITEMS.map((eachItem) => (
                     <Link to={eachItem.link}>{eachItem.name}</Link>
                 ))}

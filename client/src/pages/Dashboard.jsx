@@ -14,19 +14,15 @@ const ITEMS = [
         roles: ['STUDENT']
     },
     {
-        name: 'Product Showcase',
+        name: 'Requirements',
         type: 'state',
-        roles: ['STUDENT']
+        roles: ['INDUSTRY']
     },
+    
     {
         name: 'Upcoming Events',
         type: 'state',
         roles: ['STUDENT', 'INDUSTRY']
-    },
-    {
-        name: 'Ideas +',
-        type: 'state',
-        roles: ['STUDENT']
     },
     {
         name: 'Profile',
@@ -34,11 +30,20 @@ const ITEMS = [
         link: '/profile',
         roles: ['STUDENT', 'INDUSTRY']
     },
+    
     {
-        name: 'Requirements',
+        name: 'Product Showcase',
         type: 'state',
-        roles: ['INDUSTRY']
-    }
+        roles: ['STUDENT']
+    },
+    
+    
+    {
+        name: 'Ideas +',
+        type: 'state',
+        roles: ['STUDENT']
+    },
+   
 
 ]
 

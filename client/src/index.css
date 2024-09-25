@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes open {
+    0%{
+        max-height: 0;
+        opacity: 0;
+    }
+    100% {
+        max-height: 1000px;
+        opacity: 1;
+    }
+}
 .custom-shadow {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 2px 6px ;
+}
+
+.animate-open {
+    animation: open 600ms ease-in-out;
+    overflow: hidden;
 }

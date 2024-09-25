@@ -31,7 +31,7 @@ export const ProductCreateForm = ({closeHandler}) => {
 
 
     return (
-        <form className=" max-w-xl p-2 flex flex-col gap-6" onSubmit={handleSubmit}>
+        <form className=" max-w-xl p-2 flex flex-col gap-6 border-2 border-black border-opacity-30 rounded bg-gray-100 py-4+" onSubmit={handleSubmit}>
             <Input
                 placeholder='Title'
                 name="title"

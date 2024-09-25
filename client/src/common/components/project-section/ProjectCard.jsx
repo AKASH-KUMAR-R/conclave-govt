@@ -4,14 +4,14 @@ import { FaGithub } from "react-icons/fa6";
 export const ProjectCard = ({ headLine, subHead, description, tags, id }) => {
 
     return (
-        <div className=" px-4 py-6 w-full max-w-72 custom-shadow scale-100 hover:scale-105 transition-all rounded-md overflow-hidden">
+        <div className=" px-4 py-6 w-full max-w-72 scale-100 hover:scale-105 shadow-none hover:shadow-md bord border-secondary transition-all rounded-md overflow-hidden">
             <div className=" text-lg opacity-60">
                 <span>#{id}</span>
             </div>
             <div className="  flex flex-col ">
                 <div className=" py-4 flex justify-between items-center font-semibold">
                     <div>
-                    <h2 className=" text-xl">Headline</h2>
+                    <h2 className=" text-xl text-secondary opacity-80">Headline</h2>
                     <h3 className=" text-sm opacity-60">SubHead</h3>
                     </div>
                     
